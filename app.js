@@ -2,7 +2,7 @@ const express = require('express');
 const bodyparser = require('body-parser');
 const mongoose = require('mongoose');
 // mongoose.connect("mongodb://localhost:27017/URLShortener",{useNewUrlParser:true,useUnifiedTopology:true});
-mongoose.connect("mongodb+srv://admin-amir:amir@cluster0.uorzb.mongodb.net/URLShortener?retryWrites=true&w=majority",{useNewUrlParser:true,useUnifiedTopology:true});
+mongoose.connect("mongodb+srv://admin-amir:amir@cluster0.uorzb.mongodb.net/toDoList?retryWrites=true&w=majority",{useNewUrlParser:true,useUnifiedTopology:true});
 const app=express();
 app.use(bodyparser.urlencoded({extended:true}));
 app.set('view engine','ejs');
