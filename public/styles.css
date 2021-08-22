@@ -1,0 +1,55 @@
+body{
+    font-family: "McLaren", cursive;
+    text-align: center;
+    background-color: #eec4c4;
+}
+
+html, body {
+    height: 100%;
+    margin: 0px;
+}
+.containerfull {
+    height: 100%;
+    background: #f0e68c;
+}
+
+.content{
+    width:40px;
+    position :relative;
+    margin :auto auto 0 auto;
+}
+
+.container p{
+    margin-top: 5rem;
+}
+
+.disabled-input{
+    width: 15rem!important;
+    height: 2.3rem;
+    border-radius: 0.5rem;
+    margin-top: 25%;
+    display: inline-block;
+}
+
+#footer-title{
+    text-align: center;
+    padding-top: 1rem;
+}
+
+nav,footer{
+    background-color: #94d0cc;
+    font-weight: 200;
+}
+
+.footer{
+    margin-top: 40%;
+    height: 4rem;
+}
+
+
+.unstyledbutton{
+    border: none;
+    background-color: transparent;
+    margin-right: 0.5rem;
+}
+
