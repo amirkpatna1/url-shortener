@@ -10,6 +10,7 @@ app.use(express.static("public"));
 var ls='abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789_';
 var len=ls.length;
 var homeurl="localhost:3000";
+var homeurl="https://clya.herokuapp.com";
 function generateUniqueKey(num){
     var s="";
     while (num!==0) {
