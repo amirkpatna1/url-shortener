@@ -1,17 +1,14 @@
 const express = require('express');
 const bodyparser = require('body-parser');
 const mongoose = require('mongoose');
-// mongoose.connect("mongodb://localhost:27017/URLShortener",{useNewUrlParser:true,useUnifiedTopology:true});
-// mongoose.connect("mongodb+srv://admin-amir:amir@cluster0.uorzb.mongodb.net/toDoList?retryWrites=true&w=majority",{useNewUrlParser:true,useUnifiedTopology:true});
-mongoose.connect("mongodb+srv://amir:amir@cluster0.lvvwx.mongodb.net/Cluster0?retryWrites=true&w=majority",{useNewUrlParser:true,useUnifiedTopology:true});
+mongoose.connect(process.env.DB_URL,{useNewUrlParser:true,useUnifiedTopology:true});
 const app=express();
 app.use(bodyparser.urlencoded({extended:true}));
 app.set('view engine','ejs');
 app.use(express.static("public"));
 var ls='abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789_';
 var len=ls.length;
-// var homeurl="localhost:3000";
-var homeurl="https://clya.herokuapp.com";
+var homeurl="localhost:3000";
 function generateUniqueKey(num){
     var s="";
     while (num!==0) {
